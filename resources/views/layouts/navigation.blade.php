@@ -89,6 +89,29 @@
                 </x-dropdown>
             </div>
 
+            <!-- Theme Toggler Button (right side of navbar) -->
+            <div class="flex items-center ms-4">
+                <button x-data="{ dark: (localStorage.getItem('theme') === 'dark') }" @click="dark = !dark; localStorage.setItem('theme', dark ? 'dark' : 'light'); document.documentElement.classList.toggle('dark', dark)" :aria-label="dark ? 'Switch to light mode' : 'Switch to dark mode'" class="p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white dark:bg-gray-800">
+                    <template x-if="!dark">
+                        <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m8.66-8.66l-.71.71M4.05 19.07l-.71.71M21 12h-1M4 12H3m16.24-4.24l-.71-.71M6.34 6.34l-.71-.71"/></svg>
+                    </template>
+                    <template x-if="dark">
+                        <svg class="w-6 h-6 text-gray-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+                    </template>
+                </button>
+            </div>
+            <script>
+                // Ensure theme is set on <html> before Alpine/JS loads
+                (function() {
+                    const theme = localStorage.getItem('theme');
+                    if(theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                        document.documentElement.classList.add('dark');
+                    } else {
+                        document.documentElement.classList.remove('dark');
+                    }
+                })();
+            </script>
+
             <!-- Hamburger -->
             <div class="-me-2 flex items-center sm:hidden">
                 <button @click="open = ! open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 dark:text-gray-500 hover:text-gray-500 dark:hover:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-900 focus:outline-none focus:bg-gray-100 dark:focus:bg-gray-900 focus:text-gray-500 dark:focus:text-gray-400 transition duration-150 ease-in-out">
