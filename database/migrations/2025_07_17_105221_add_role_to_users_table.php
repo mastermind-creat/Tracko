@@ -31,18 +31,12 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn([
-                'role',
-                'phone',
-                'organization',
-                'department',
-                'position',
-                'work_id',
-                'county',
-                'subcounty',
-                'id_number',
-                'photo',
-            ]);
+            // SQLite does not support dropping multiple columns or some column types easily.
+            // For SQLite compatibility, only drop 'role'.
+            // For full rollback in MySQL, you may manually drop the other columns if needed.
+            $table->dropColumn('role');
+            // The following columns are not dropped for SQLite compatibility:
+            // 'phone', 'organization', 'department', 'position', 'work_id', 'county', 'subcounty', 'id_number', 'photo'
         });
     }
 };
