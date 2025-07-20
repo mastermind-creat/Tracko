@@ -30,7 +30,7 @@
 
             <!-- Page Content -->
             <main>
-                {{ $slot }}
+                @yield('content')
             </main>
         </div>
         <footer class="bg-gray-100 dark:bg-[#18192a] border-t border-gray-200 dark:border-[#23243a] mt-16">
