@@ -4,50 +4,50 @@
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
-                <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
+                <div class="shrink-0 flex items-center h-full">
+                    <a href="{{ route('dashboard') }}" class="flex items-center h-full">
+                        <x-application-logo class="h-12 w-auto object-contain m-0 p-0 align-middle" />
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
                 @guest
                     <div class="block space-x-8 sm:-my-px sm:ms-10 sm:flex justify-end">
-                        <x-nav-link :href="route('landing')" class="text-blue-900 font-semibold">
+                        <x-nav-link :href="route('landing')" class="font-semibold text-blue-900 dark:text-cyan-200 hover:underline hover:text-blue-700 dark:hover:text-cyan-400 transition-colors duration-200">
                             {{ __('Home') }}
                         </x-nav-link>
-                        <x-nav-link href="about" class="text-blue-900 font-semibold">
+                        <x-nav-link href="about" class="font-semibold text-blue-900 dark:text-cyan-200 hover:underline hover:text-blue-700 dark:hover:text-cyan-400 transition-colors duration-200">
                             {{ __('About') }}
                         </x-nav-link>
-                        <x-nav-link href="contact" class="text-blue-900 font-semibold">
+                        <x-nav-link href="contact" class="font-semibold text-blue-900 dark:text-cyan-200 hover:underline hover:text-blue-700 dark:hover:text-cyan-400 transition-colors duration-200">
                             {{ __('Contact Us') }}
                         </x-nav-link>
-                        <x-nav-link :href="route('login')" class="text-blue-900 font-semibold">
+                        <x-nav-link :href="route('login')" class="font-semibold text-blue-900 dark:text-cyan-200 hover:underline hover:text-blue-700 dark:hover:text-cyan-400 transition-colors duration-200">
                             {{ __('Login') }}
                         </x-nav-link>
-                        <x-nav-link :href="route('register')" class="text-blue-900 font-semibold">
+                        <x-nav-link :href="route('register')" class="font-semibold text-blue-900 dark:text-cyan-200 hover:underline hover:text-blue-700 dark:hover:text-cyan-400 transition-colors duration-200">
                             {{ __('Register') }}
                         </x-nav-link>
-                        <x-nav-link :href="route('public.portal')" class="text-blue-900 font-semibold">
+                        <x-nav-link :href="route('public.portal')" class="font-semibold text-blue-900 dark:text-cyan-200 hover:underline hover:text-blue-700 dark:hover:text-cyan-400 transition-colors duration-200">
                             {{ __('Public Portal') }}
                         </x-nav-link>
                     </div>
                 @else
                     <div class="block space-x-8 sm:-my-px sm:ms-10 sm:flex justify-end">
-                        <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                        <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="font-semibold text-blue-900 dark:text-cyan-200 hover:underline hover:text-blue-700 dark:hover:text-cyan-400 transition-colors duration-200">
                             {{ __('Dashboard') }}
                         </x-nav-link>
-                        <x-nav-link :href="route('projects.index')" :active="request()->routeIs('projects.*')">
+                        <x-nav-link :href="route('projects.index')" :active="request()->routeIs('projects.*')" class="font-semibold text-blue-900 dark:text-cyan-200 hover:underline hover:text-blue-700 dark:hover:text-cyan-400 transition-colors duration-200">
                             {{ __('Projects') }}
                         </x-nav-link>
-                        <x-nav-link :href="route('reports.index')" :active="request()->routeIs('reports.*')">
+                        <x-nav-link :href="route('reports.index')" :active="request()->routeIs('reports.*')" class="font-semibold text-blue-900 dark:text-cyan-200 hover:underline hover:text-blue-700 dark:hover:text-cyan-400 transition-colors duration-200">
                             {{ __('Reports') }}
                         </x-nav-link>
-                        <x-nav-link :href="route('public.portal')">
+                        <x-nav-link :href="route('public.portal')" class="font-semibold text-blue-900 dark:text-cyan-200 hover:underline hover:text-blue-700 dark:hover:text-cyan-400 transition-colors duration-200">
                             {{ __('Public Portal') }}
                         </x-nav-link>
                         @if(Auth::user()->role === 'admin')
-                            <x-nav-link :href="route('admin.panel')">
+                            <x-nav-link :href="route('admin.panel')" class="font-semibold text-blue-900 dark:text-cyan-200 hover:underline hover:text-blue-700 dark:hover:text-cyan-400 transition-colors duration-200">
                                 {{ __('Admin Panel') }}
                             </x-nav-link>
                         @endif
