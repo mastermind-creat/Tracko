@@ -3,19 +3,22 @@
 @section('content')
 <section class="min-h-screen py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-white to-cyan-50 dark:from-[#18192a] dark:via-[#23243a] dark:to-[#18192a] transition-colors duration-500">
     <div class="max-w-7xl mx-auto">
-        <!-- Hero Section -->
-        <div class="text-center mb-16 animate-fade-in">
-            <div class="inline-block bg-white dark:bg-gray-800 rounded-full p-3 shadow-lg mb-6">
-                <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full flex items-center justify-center">
-                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                    </svg>
-                </div>
+        <!-- About ProjectTracko Section with Image -->
+        <div class="grid md:grid-cols-2 gap-8 items-center mb-16 animate-fade-in">
+            <div>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-500 to-cyan-400 bg-clip-text text-transparent mb-4">About ProjectTracko</h1>
+                <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl leading-relaxed mb-4">
+                    Empowering transparency, accountability, and community engagement for Kisumu County projects. ProjectTracko is a platform dedicated to providing up-to-date information on local development initiatives, fostering trust and collaboration for sustainable growth.
+                </p>
+                <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-4">
+                    <li>Open access to project data and progress reports</li>
+                    <li>Tracking project implementation and outcomes</li>
+                    <li>Community feedback and engagement</li>
+                </ul>
             </div>
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-500 to-cyan-400 bg-clip-text text-transparent mb-4">About ProjectTracko</h1>
-            <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                Empowering transparency, accountability, and community engagement for Kisumu County projects.
-            </p>
+            <div class="flex justify-center">
+                <img src="{{ asset('images/projectTracko.jpg') }}" alt="About ProjectTracko" class="w-full max-w-xs rounded-2xl shadow-lg border-4 border-white dark:border-gray-800 object-cover">
+            </div>
         </div>
 
         <!-- Content Sections -->
