@@ -14,7 +14,7 @@
             </div>
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-500 to-cyan-400 bg-clip-text text-transparent mb-4">About ProjectTracko</h1>
             <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                Empowering transparency, accountability, and community engagement for Kiauru County projects.
+                Empowering transparency, accountability, and community engagement for Kisumu County projects.
             </p>
         </div>
 
@@ -36,7 +36,7 @@
                 </div>
                 <div class="md:col-span-8 lg:col-span-9 bg-white dark:bg-gray-800 rounded-xl shadow-md p-8">
                     <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                        To promote transparency, accountability, and community engagement by providing up-to-date information on local development initiatives in Kiauru County.
+                        To promote transparency, accountability, and community engagement by providing up-to-date information on local development initiatives in Kisumu County.
                     </p>
                     <div class="mt-6 grid sm:grid-cols-2 gap-4">
                         <div class="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg border border-blue-100 dark:border-blue-800">
@@ -67,7 +67,7 @@
                 </div>
                 <div class="md:col-span-8 lg:col-span-9 bg-white dark:bg-gray-800 rounded-xl shadow-md p-8">
                     <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                        To empower citizens and stakeholders with accessible project data, fostering trust and collaboration for sustainable development in Kiauru County.
+                        To empower citizens and stakeholders with accessible project data, fostering trust and collaboration for sustainable development in Kisumu County.
                     </p>
                     <div class="mt-8 flex flex-col sm:flex-row items-center bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-xl p-6">
                         <div class="flex-shrink-0 mb-4 sm:mb-0 sm:mr-6">
@@ -79,7 +79,7 @@
                         </div>
                         <div>
                             <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Community Focused</h3>
-                            <p class="text-gray-600 dark:text-gray-300">We believe in putting the people of Kiauru County at the center of development tracking, ensuring their voices are heard and their needs are met.</p>
+                            <p class="text-gray-600 dark:text-gray-300">We believe in putting the people of Kisumu County at the center of development tracking, ensuring their voices are heard and their needs are met.</p>
                         </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                                 </div>
                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Browse Projects</h3>
                             </div>
-                            <p class="text-gray-600 dark:text-gray-300">Explore ongoing and completed projects across various sectors in Kiauru County.</p>
+                            <p class="text-gray-600 dark:text-gray-300">Explore ongoing and completed projects across various sectors in Kisumu County.</p>
                         </div>
                         <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
                             <div class="flex items-center mb-4">
@@ -161,12 +161,10 @@
                         <!-- Team Member 1 -->
                         <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
                             <div class="h-40 bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center">
-                                <svg class="w-20 h-20 text-white opacity-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 15c2.485 0 4.797.657 6.879 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0zm0 0V9a3 3 0 00-3-3h-1.5a3 3 0 00-3 3v.293m9.293-3.207l-3.593-3.593a1.5 1.5 0 00-2.12 0l-3.593 3.593a1.5 1.5 0 001.666 2.373h4.953a1.5 1.5 0 001.666-2.373z"></path>
-                                </svg>
+                                <img src="{{ asset('images/team/kennedy.jpg') }}" alt="Wambia Kennedy" class="w-24 h-24 rounded-full object-cover shadow-lg border-4 border-white dark:border-gray-800">
                             </div>
                             <div class="p-6 text-center">
-                                <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-1">Jane Doe</h3>
+                                <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-1">Wambia Kennedy</h3>
                                 <p class="text-blue-600 dark:text-blue-400 font-medium mb-3">Project Lead</p>
                                 <p class="text-gray-600 dark:text-gray-300 text-sm">Oversees all project tracking initiatives and community engagement.</p>
                             </div>
@@ -175,9 +173,7 @@
                         <!-- Team Member 2 -->
                         <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
                             <div class="h-40 bg-gradient-to-r from-purple-500 to-pink-400 flex items-center justify-center">
-                                <svg class="w-20 h-20 text-white opacity-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                                </svg>
+                                <img src="{{ asset('images/team/john.jpg') }}" alt="John Smith" class="w-24 h-24 rounded-full object-cover shadow-lg border-4 border-white dark:border-gray-800">
                             </div>
                             <div class="p-6 text-center">
                                 <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-1">John Smith</h3>
@@ -189,12 +185,10 @@
                         <!-- Team Member 3 -->
                         <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
                             <div class="h-40 bg-gradient-to-r from-green-500 to-teal-400 flex items-center justify-center">
-                                <svg class="w-20 h-20 text-white opacity-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                                </svg>
+                                <img src="{{ asset('images/team/mary.jpg') }}" alt="Mary Atieno" class="w-24 h-24 rounded-full object-cover shadow-lg border-4 border-white dark:border-gray-800">
                             </div>
                             <div class="p-6 text-center">
-                                <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-1">Mary Atieno</h3>
+                                <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-1">N/A</h3>
                                 <p class="text-green-600 dark:text-green-400 font-medium mb-3">Community Liaison</p>
                                 <p class="text-gray-600 dark:text-gray-300 text-sm">Connects with local communities to gather project updates.</p>
                             </div>
@@ -203,12 +197,10 @@
                         <!-- Team Member 4 -->
                         <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
                             <div class="h-40 bg-gradient-to-r from-cyan-500 to-blue-400 flex items-center justify-center">
-                                <svg class="w-20 h-20 text-white opacity-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
-                                </svg>
+                                <img src="{{ asset('images/team/peter.jpg') }}" alt="Peter Otieno" class="w-24 h-24 rounded-full object-cover shadow-lg border-4 border-white dark:border-gray-800">
                             </div>
                             <div class="p-6 text-center">
-                                <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-1">Peter Otieno</h3>
+                                <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-1">N/A</h3>
                                 <p class="text-cyan-600 dark:text-cyan-400 font-medium mb-3">GIS Specialist</p>
                                 <p class="text-gray-600 dark:text-gray-300 text-sm">Manages project mapping and geographical data visualization.</p>
                             </div>
